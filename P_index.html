@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myweb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="angular.min.js"></script>
+
+    <script type="text/javascript" src="angular-route.min.js"></script>
+
+    <script type="text/javascript" src="P_module.js"></script>
+
+    <style>
+      .h1 {
+        color: rgb(230, 245, 16);
+      }
+      .a {
+        color: rgb(241, 232, 238);
+      }
+      .fcolor {
+        background-color: rgba(226, 139, 9, 0.93);
+        color: black;
+        text-align-last: center;
+      }
+      .col-sm-3 {
+        background-color: #025179;
+      }
+      .row {
+        background-color: rgb(24, 27, 24);
+      }
+    </style>
+  </head>
+  <body ng-controller="mycontrol">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1><marquee bgcolor="orange">VJ GUN COLLECTION</marquee></h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <ul>
+            <h1 class="h1">
+              <li><a href="#!g1" class="a">Revolver</a></li>
+            </h1>
+            <h1 class="h1">
+              <li><a href="#!g2" class="a">Machine Gun</a></li>
+            </h1>
+            <h1 class="h1">
+              <li><a href="#!g3" class="a">KAR98</a></li>
+            </h1>
+            <h1 class="h1">
+              <li><a href="#!g4" class="a">AWM</a></li>
+            </h1>
+            <h1 class="h1">
+              <li><a href="#!g5" class="a">AK47</a></li>
+            </h1>
+          </ul>
+        </div>
+
+        <div class="col-sm-9">
+          <div ng-view></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="fcolor">DM FOR GUNS</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
